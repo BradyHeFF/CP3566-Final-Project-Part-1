@@ -15,11 +15,9 @@ public class Grades {
     private Long courseId;
     private String grade;
 
-    // Constructors
     public Grades() {
     }
 
-    // Getters and setters
     public Long getGid() {
         return gid;
     }
