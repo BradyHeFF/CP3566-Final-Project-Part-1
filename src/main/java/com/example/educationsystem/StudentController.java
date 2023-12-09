@@ -1,7 +1,6 @@
-package com.example.educationsystem.controller;
 
-import com.example.educationsystem.entity.Student;
-import com.example.educationsystem.repository.StudentRepository;
+package com.example.educationsystem;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,6 +28,6 @@ public class StudentController {
     // get a student by ID
     @GetMapping("/{id}")
     public Student getStudentById(@PathVariable Long id) {
-        return studentRepository.findById(id).orElse(null); // or handle the case when the student is not found
+        return studentRepository.findById(id).orElse(null);
     }
 }

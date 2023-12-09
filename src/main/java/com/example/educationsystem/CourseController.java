@@ -1,14 +1,12 @@
-package com.example.educationsystem.controller;
+package com.example.educationsystem;
 
-import com.example.educationsystem.entity.Course;
-import com.example.educationsystem.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/course")
+@RequestMapping("/api/cna/course")
 public class CourseController {
 
     @Autowired

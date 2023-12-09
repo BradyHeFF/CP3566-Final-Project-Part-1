@@ -1,4 +1,4 @@
-package com.example.educationsystem.entity;
+package com.example.educationsystem;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,11 +9,14 @@ import javax.persistence.Id;
 public class Course {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long courseId;
     private String courseName;
     private String courseNumber;
     private Integer capacity;
+    private Integer year;
+    private String semester;
+    private Long pid;
 
     public Course() {
     }
@@ -50,5 +53,27 @@ public class Course {
         this.capacity = capacity;
     }
 
+    public Integer getYear() {
+        return year;
+    }
 
+    public void setYear(Integer year) {
+        this.year = year;
+    }
+
+    public String getSemester() {
+        return semester;
+    }
+
+    public void setSemester(String semester) {
+        this.semester = semester;
+    }
+
+    public Long getPid() {
+        return pid;
+    }
+
+    public void setPid(Long pid) {
+        this.pid = pid;
+    }
 }
